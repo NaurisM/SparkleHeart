@@ -15,10 +15,6 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
 textarea{resize: none;}
 
-body{
-   font-family: 'Montserrat', sans-serif;
-   min-width: 1366px;
-}
 
 
 //============================================ fonts ============================================//
@@ -93,21 +89,29 @@ body{
 
 //============================================ header ============================================//
 
+body{
+   font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+   max-width: 100vw;
+}
+
 .header {
    position: relative;
-   z-index: 2;
+   z-index: 5;
+   max-width: 100%;
 }
 
 .header__inner {
    height: 130px;
-   min-width: 100vw;
+   max-width: 100vw;
    padding: 0 65px 0 61px;
    display: flex;
    justify-content: space-between;
    background: url("../img/header.png") center no-repeat;
+   background-size: cover;
 }
-
-
 
 .nav {
    display: flex;
@@ -184,7 +188,7 @@ body{
    margin-top: -60px;
    margin-bottom: 150px;
    min-height: 699px;
-   background: url("../img/video.jpg") left bottom no-repeat;
+   background: url("../img/video.jpg") center center no-repeat;
    position: relative;
 }
 
@@ -220,18 +224,19 @@ body{
 
 .gallery {
    height: 398px;
-   min-width: 100vw;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
    margin-bottom: 154px;
    position: relative;
+   overflow: hidden;
 }
 
 .gallery__inner {
    min-width: 100vw;
-   min-height: 364px;
+   width: 100%;
+   height: 364px;
    display: flex;
    position: absolute;
    top: 17px;
@@ -276,7 +281,7 @@ body{
 
 .gallery__top, .gallery__bottom {
    z-index: 5;
-   min-width: 100vw;
+   max-width: 100vw;
    height: 55px;
 }
 
@@ -869,9 +874,17 @@ body{
       padding: 0 23px;
    }
 
+   .gallery {
+      height: 216px;
+   }
+
    .gallery__inner {
       height: 216px;
       margin: -25px 0;
+   }
+
+   .gallery__top {
+      top: -15px;
    }
 
    .buttons__title {
@@ -917,6 +930,10 @@ body{
 }
 
 @media (max-width: 767px) {
+   .header__inner {
+      height: 63px; 
+   }
+
    .nav {
       padding-top: 92px;
 
@@ -966,6 +983,7 @@ body{
       min-width: 320px;
       min-height: 276px;
       margin-bottom: 80px;
+      background-size: cover;
    }
 
    .intro__item img {
@@ -981,7 +999,13 @@ body{
    }
 
    .gallery {
+      height: 357px;
       margin-bottom: 120px;
+   }
+
+   .gallery__bottom {
+      position: absolute;
+      top: 330px;
    }
 
    .gallery__inner {
@@ -1013,6 +1037,10 @@ body{
    .gallery__item3,
    .gallery__item4 {
       min-height: 183px;
+   }
+
+   .gallery__bottom {
+      bottom: 15px;
    }
 
    .buttons__inner {
