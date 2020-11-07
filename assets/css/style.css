@@ -1021,6 +1021,10 @@ body {
   color: #fff;
 }
 
+.stories-button {
+  display: none;
+}
+
 .team-subtitle {
   width: 800px;
   margin: 0 auto;
@@ -1608,6 +1612,45 @@ body {
     flex: 1 1 auto;
   }
 
+  .stories-inner {
+    margin-bottom: 50px;
+  }
+  .stories-inner .stories-item {
+    width: 143px;
+    height: 143px;
+  }
+  .stories-inner .stories-item .stories-name {
+    height: 143px;
+  }
+  .stories-inner .stories-item.hide-stories {
+    display: none;
+  }
+
+  .stories-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .team-subtitle {
+    padding: 0 80px;
+    font-size: 18px;
+  }
+
+  .team-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-inner .member1, .team-inner .member2, .team-inner .member3 {
+    width: 352px;
+    height: auto;
+  }
+  .team-inner .member1, .team-inner .member2 {
+    margin-bottom: 25px;
+  }
+  .team-inner .team-member {
+    width: 352px;
+  }
+
   .sponsors-inner {
     padding: 0 80px;
     height: 300px;
@@ -1904,9 +1947,17 @@ body {
 
   .idea-intro .idea-intro_title {
     font-size: 36px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 1.6;
   }
   .idea-intro .idea-intro_subtitle {
     font-size: 14px;
+  }
+  .idea-intro .idea-intro_subtitle.more {
+    padding: 0 20px;
+    font-size: 18px;
+    margin-bottom: 80px;
   }
   .idea-intro .idea-intro_text {
     margin-bottom: 80px;
@@ -2071,5 +2122,32 @@ body {
   .map-inner .info .info-inner .info-content .info-content_contacts {
     font-size: 14px;
     line-height: 1.2;
+  }
+
+  .stories-inner .stories-item {
+    width: 134px;
+    height: 134px;
+  }
+  .stories-inner .stories-item .stories-name {
+    height: 134px;
+  }
+
+  .purpose-inner .purpose-title {
+    margin-bottom: 30px;
+  }
+
+  .team-subtitle {
+    width: 100%;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+
+  .team-inner .member1, .team-inner .member2, .team-inner .member3 {
+    width: 280px;
+    height: 354px;
+  }
+  .team-inner .team-member {
+    width: 280px;
+    height: 354px;
   }
 }
