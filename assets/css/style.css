@@ -4,23 +4,32 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -37,7 +46,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -53,7 +63,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -367,7 +382,8 @@ body {
   object-position: 50% 50%;
 }
 
-.gallery-top, .gallery-bottom {
+.gallery-top,
+.gallery-bottom {
   z-index: 5;
   max-width: 100vw;
   height: 35px;
@@ -456,7 +472,8 @@ body {
   text-align: center;
   width: 100%;
 }
-.communication-form input, .communication-form textarea {
+.communication-form input,
+.communication-form textarea {
   display: block;
   background: rgba(196, 196, 196, 0.4);
   border-radius: 6px;
@@ -926,7 +943,7 @@ body {
   max-width: 1044px;
   margin: 0 auto;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 145px;
 }
@@ -1346,7 +1363,8 @@ body {
   top: 0;
 }
 
-.burger-item_second, .burger-item_third {
+.burger-item_second,
+.burger-item_third {
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1734,7 +1752,8 @@ body {
     margin-bottom: 30px;
   }
 
-  .communication-form input, .communication-form textarea {
+  .communication-form input,
+.communication-form textarea {
     margin-bottom: 10px;
     font-size: 17px;
   }
