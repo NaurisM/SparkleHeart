@@ -1391,39 +1391,52 @@ body {
 }
 
 .modal-video {
-  height: 768px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   background: rgba(47, 72, 88, 0.9);
-  padding-top: 142px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  transition: all 0.8s ease 0s;
+}
+.modal-video:target {
+  opacity: 1;
+  visibility: visible;
 }
 
 .video-inner {
-  margin-bottom: 25px;
-  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
-
-.play-icon {
+.video-inner .video-content {
+  position: relative;
+  margin-bottom: 5px;
+}
+.video-inner .video-content .video-close {
+  position: absolute;
+  top: 0px;
+  right: -40px;
+}
+.video-inner .play-icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   background-color: #fff;
   border-radius: 50%;
 }
-
-.video-name {
+.video-inner .video-name {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 500;
   color: #fff;
-}
-
-.video-close {
-  position: absolute;
-  top: 94px;
-  right: 158px;
 }
 
 .cookies {
@@ -2078,7 +2091,7 @@ body {
     margin-bottom: 120px;
   }
   .selection-inner .selection-item.up {
-    margin-top: -30px;
+    margin-top: 0;
     margin-bottom: 60px;
   }
   .selection-inner .selection-item .selection-text {
@@ -2103,7 +2116,7 @@ body {
     display: none;
   }
   .map-inner .info {
-    display: flex;
+    display: none;
   }
   .map-inner .info .info-inner {
     width: 280px;
