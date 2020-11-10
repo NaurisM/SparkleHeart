@@ -1644,18 +1644,25 @@ body {
    padding: 20px;
 
    .video-content {
+      max-width: 100%;
+      width: 912px;
       position: relative;
       margin-bottom: 5px;
-      // transition: all .8s ease 0s;
-      // opacity: 0;
-      // transform: translate(0, -100%);
+
+      & img {
+         width: 100%;
+         object-fit: cover;
+         object-position: 50% 50%;
+      }
 
       .video-close {
          position: absolute;
-         top: 0px;
+         top: -10px;
          right: -40px;
       }
    }
+
+   
 
    .play-icon {
       position: absolute;
@@ -1974,6 +1981,15 @@ body {
    .sfooter-inner {
       margin-top: -35px;
    }
+
+   .video-inner {
+      .video-content {
+         max-width: 608px;
+         height: 341px;
+      }
+
+      .play-icon { width: 85px; }
+   }
 }
 
 @media (max-width: 767px) {
@@ -2233,6 +2249,13 @@ body {
 
    .burger-item:after {
       bottom: -6px;
+   }
+
+   .video-inner {
+      .video-content {
+         max-width: 500px;
+         height: 280px;
+      }
    }
 }
 
@@ -2517,5 +2540,21 @@ body {
          width: 280px;
          height: 354px;
       }
+   }
+
+   .video-inner {
+      .video-content {
+         max-width: 279px;
+         height: 156px;
+
+         .video-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+         }
+         
+      }
+
+      .play-icon { width: 50px; }
    }
 }
