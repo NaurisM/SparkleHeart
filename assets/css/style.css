@@ -894,6 +894,7 @@ body {
   background: rgba(255, 168, 0, 0.5);
   border-radius: 14px;
   cursor: pointer;
+  z-index: 100;
 }
 .map-inner .map-tools .tool-box .tool-img {
   position: absolute;
@@ -1650,6 +1651,9 @@ body {
     display: flex;
     justify-content: center;
   }
+  .stories-button.hidden {
+    display: none;
+  }
 
   .team-subtitle {
     padding: 0 80px;
@@ -1669,6 +1673,10 @@ body {
   }
   .team-inner .team-member {
     width: 352px;
+  }
+
+  .purpose-inner .purpose-title {
+    margin-bottom: 30px;
   }
 
   .sponsors-inner {
