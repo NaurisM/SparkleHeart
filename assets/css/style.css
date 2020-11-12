@@ -656,18 +656,13 @@ body {
   z-index: 5;
 }
 
-.idea-feedback__content {
-  display: flex;
-  justify-content: center;
-  color: #2F4858;
-}
-
 .idea-feedback__slider {
   max-width: 642px;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 150px;
+  color: #2F4858;
+  margin: 0 auto;
 }
 .idea-feedback__slider .idea-feedback__title {
   font-family: "Oswald", sans-serif;
@@ -688,6 +683,20 @@ body {
 }
 .idea-feedback__slider .prev {
   padding-right: 41px;
+}
+
+.splide__arrows {
+  margin-bottom: 150px;
+}
+
+.splide__arrow--prev {
+  margin-left: 28%;
+  background-color: transparent;
+}
+
+.splide__arrow--next {
+  padding-left: 40px;
+  background-color: transparent;
 }
 
 .purpose-inner {
