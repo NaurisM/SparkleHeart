@@ -831,7 +831,7 @@ body {
 
 .splide__arrow--prev {
    background-color: transparent;
-   opacity: .4;
+   opacity: .5;
    transition: opacity .3s linear;
    &:hover, &:active {
       opacity: 1;
@@ -840,7 +840,7 @@ body {
 .splide__arrow--next {
    padding-left: 40px;
    background-color: transparent;
-   opacity: .4;
+   opacity: .5;
    transition: opacity .3s linear;
    &:hover {
       opacity: 1;
@@ -1776,7 +1776,7 @@ body {
       background-color: $white-color;
       width: 100vw;
       height: 100vh;
-      padding-top: 100px;
+      padding-top: 110px;
 
       & .nav-links {
          flex-direction: column;
@@ -1786,7 +1786,7 @@ body {
 
       & .nav-link {
          margin-right: 0;
-         margin-bottom: 60px;
+         margin-bottom: 30px;
 
 
          & a {
@@ -2033,10 +2033,10 @@ body {
       padding-top: 60px;
 
       & .nav-link {
-         margin-bottom: 20px;
+         margin-bottom: 10px;
 
          & a {
-            font-size: 18px;
+            font-size: 14px;
          }
       }
 
@@ -2045,11 +2045,11 @@ body {
       }
 
       .language-bar {
-         margin-bottom: 30px;
+         margin-bottom: 10px;
       }
 
       & .lang-link {
-         font-size: 18px;
+         font-size: 14px;
          margin-right: 20px;
       }
    }

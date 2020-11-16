@@ -693,7 +693,7 @@ body {
 
 .splide__arrow--prev {
   background-color: transparent;
-  opacity: 0.4;
+  opacity: 0.5;
   transition: opacity 0.3s linear;
 }
 .splide__arrow--prev:hover, .splide__arrow--prev:active {
@@ -703,7 +703,7 @@ body {
 .splide__arrow--next {
   padding-left: 40px;
   background-color: transparent;
-  opacity: 0.4;
+  opacity: 0.5;
   transition: opacity 0.3s linear;
 }
 .splide__arrow--next:hover {
@@ -1531,7 +1531,7 @@ body {
     background-color: #fff;
     width: 100vw;
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 110px;
   }
   .nav .nav-links {
     flex-direction: column;
@@ -1540,7 +1540,7 @@ body {
   }
   .nav .nav-link {
     margin-right: 0;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .nav .nav-link a {
     font-size: 24px;
@@ -1757,19 +1757,19 @@ body {
     padding-top: 60px;
   }
   .nav .nav-link {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .nav .nav-link a {
-    font-size: 18px;
+    font-size: 14px;
   }
   .nav .nav-lang {
     margin-right: 20px;
   }
   .nav .language-bar {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .nav .lang-link {
-    font-size: 18px;
+    font-size: 14px;
     margin-right: 20px;
   }
 
