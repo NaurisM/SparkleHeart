@@ -1769,7 +1769,7 @@ body {
       display: none;
 
       flex-direction: column-reverse;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 50%;
       transform: translate(-50%);
@@ -1831,6 +1831,11 @@ body {
 
    .show {
       display: flex;
+   }
+
+   .fixed { 
+      height: 100vh;
+      overflow-y: hidden;
    }
 
    .burger {
